@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import { Container, Main, Title, Description } from '../components/sharedstyles'
+import { Head } from "next/document";
+import Link from "next/link";
+import { Container, Main } from "../components/containers";
 
 export default function About() {
   return (
     <Container>
+      <Head>
+        <title>About Page</title>
+      </Head>
       <Main>
-        <Title>About Page</Title>
-        <Description>
-          <Link href="/">&larr; Go Back</Link>
-        </Description>
+        <Link href="/">&larr; Go Back</Link>
       </Main>
     </Container>
-  )
+  );
 }

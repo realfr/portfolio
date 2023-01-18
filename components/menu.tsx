@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import { AiOutlineCopy } from "react-icons/ai";
 import { NavLink } from "./typography";
+import { copy } from "../utils";
 
 export const Nav = styled.ul`
   display: flex;
@@ -17,6 +19,7 @@ export const Nav = styled.ul`
   top: 1rem;
   z-index: 3;
   border: thin solid ${(p) => p.theme.colors.neonGreen};
+  box-shadow: 0 10px 10px -10px rgb(0 0 0 /5%);
 `;
 
 export default function Menu() {
@@ -33,9 +36,11 @@ export default function Menu() {
             />
           </li>
         </Link>
-        <Link href="/notes">
-          <NavLink>Notes</NavLink>
-        </Link>
+
+        <NavLink onClick={copy}>
+          <AiOutlineCopy />
+          Email
+        </NavLink>
       </Nav>
     </nav>
   );

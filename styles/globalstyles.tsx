@@ -1,21 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import fontsCSS from "./fonts.module.css";
 
 const GlobalStyle = createGlobalStyle`
   
-  @font-face {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/Satoshi.woff2') format('woff2')
-    font-display: fallback;
-  }
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: normal;
-    font-weight: 500;
-    src: url('/fonts/ClashDisplay.woff2') format('woff2')
-    font-display: fallback;
-  }
+${fontsCSS}
 
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -23,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     border: 0;
     font-size: 100%;
     font: inherit;
+    font-size: 16px;
+    
     vertical-align: baseline; 
   }
   
@@ -65,18 +55,28 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-  html, body {
-    font-size: 16px;
-    font-family: Satoshi, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
   }
 
-  h1. h2, h3, h4, h5, h6 {
-    font-family: Clash Display;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: 0.05em;
+  html, body {
+    font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    background-color: ${(p) => p.theme.colors.white};
+    height: 100%;
   }
+
+  p, h1, h2, h3, h4,h5,h6 {
+    overflow-wrap: break-word;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+ 
 
   h3, h4, h5, h6 {
     font-weight: 500;
@@ -110,11 +110,6 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     font-size: 1rem;
   }
-
-
-
-
-
 `;
 
 export default GlobalStyle;

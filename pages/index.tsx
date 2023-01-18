@@ -1,8 +1,6 @@
 import Head from "next/head";
-
-import Link from "next/link";
-import { Container, Main } from "../components/containers";
-import { D1, NavLink } from "../components/typography";
+import { Main } from "../components/containers";
+import { D1 } from "../components/typography";
 import { HeroContainer } from "../components/hero";
 import { AiOutlineCopy } from "react-icons/ai";
 import { Button } from "../components/button";

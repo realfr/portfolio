@@ -17,7 +17,8 @@ export const Button = styled.button`
   ::hover,
   ::active,
   ::focus {
-    background: ${(p) => p.theme.colors.neonGreen};
+    background: ${(p) => p.theme.colors.green};
+    color: ${(p) => p.theme.colors.white};
     border: thin solid ${(p) => p.theme.colors.white};
   }
 `;

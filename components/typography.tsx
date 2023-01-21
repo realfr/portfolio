@@ -12,7 +12,7 @@ export const D1 = styled.h1`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 4.768rem;
+    font-size: 7.478rem;
   }
 `;
 
@@ -24,7 +24,7 @@ export const D2 = styled.h2`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 3.815rem;
+    font-size: 5.61rem;
   }
 `;
 
@@ -36,7 +36,7 @@ export const H1 = styled.h1`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 3.052rem;
+    font-size: 4.209rem;
   }
 `;
 
@@ -48,7 +48,7 @@ export const H2 = styled.h2`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 2.441rem;
+    font-size: 3.157rem;
   }
 `;
 export const H3 = styled.h3`
@@ -59,7 +59,7 @@ export const H3 = styled.h3`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 1.953rem;
+    font-size: 2.369rem;
   }
 `;
 export const H4 = styled.h4`
@@ -70,7 +70,7 @@ export const H4 = styled.h4`
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 1.563rem;
+    font-size: 1.777rem;
   }
 `;
 export const H5 = styled.h5`
@@ -82,22 +82,19 @@ export const H5 = styled.h5`
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
-    font-size: 1.25rem;
+    font-size: 1.333rem;
   }
 `;
 export const H6 = styled.h6`
   font-family: Zephyr;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 120%;
   letter-spacing: 0.03em;
   overflow-wrap: break-word;
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};
-  @media screen and (min-width: 568px) {
-    font-size: calc(1rem + 16 * ((100vw - 568px) / (768-568)));
-  }
   @media screen and (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -124,43 +121,43 @@ export const B = styled.span<BProps>`
 export const P1 = styled.p`
   font-family: Satoshi;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 120%;
   letter-spacing: 0.05em;
 
   @media screen and (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 export const P2 = styled.p`
   font-family: Satoshi;
   font-weight: 400;
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   line-height: 120%;
   letter-spacing: 0.05em;
   overflow: hidden;
   max-width: 75ch;
   @media screen and (min-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 `;
 export const C = styled.caption`
   font-family: Satoshi;
   font-weight: 400;
-  font-size: 0.512rem;
+  font-size: 0.64rem;
   line-height: 120%;
   letter-spacing: 0.05em;
   @media screen and (min-width: 768px) {
-    font-size: 0.64rem;
+    font-size: 0.8rem;
   }
 `;
 export const L = styled.label`
   font-family: Satoshi;
   font-weight: 500;
-  font-size: 0.512rem;
+  font-size: 0.64rem;
   line-height: 120%;
   letter-spacing: 0.05em;
   @media screen and (min-width: 768px) {
-    font-size: 0.64rem;
+    font-size: 0.8rem;
   }
 `;

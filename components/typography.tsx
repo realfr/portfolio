@@ -55,7 +55,7 @@ export const H3 = styled.h3`
   font-family: Zephyr;
   font-size: 1.563rem;
   line-height: 120%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -66,7 +66,7 @@ export const H4 = styled.h4`
   font-family: Zephyr;
   font-size: 1.25rem;
   line-height: 120%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -77,7 +77,7 @@ export const H5 = styled.h5`
   font-family: Zephyr;
   font-size: 1rem;
   line-height: 120%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   overflow-wrap: break-word;
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};
@@ -89,7 +89,7 @@ export const H6 = styled.h6`
   font-family: Zephyr;
   font-size: 1rem;
   line-height: 120%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   overflow-wrap: break-word;
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};

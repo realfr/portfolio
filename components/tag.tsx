@@ -19,6 +19,9 @@ const TagGroup = styled.ul`
   ${flex({ align: "flex-start", justify: "flex-start" })};
   gap: 0.5rem 1rem;
   flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    gap: 0.5rem 0.5rem;
+  }
 `;
 
 const Tags = ({ tags }) => {

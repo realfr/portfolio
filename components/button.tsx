@@ -1,24 +1,20 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { flex } from "../styles/shared";
 
 export const Button = styled.button`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.25rem;
-  cursor: pointer;
+  ${flex({ gap: 0.25 })};
   padding: 1rem 2rem;
-  gap: 0.25rem;
   font-family: Satoshi;
   font-size: 1.25rem;
   letter-spacing: 0.05em;
-  color: ${(p) => p.theme.colors.green};
-  background: ${(p) => p.theme.colors.neonGreenTransparent};
+  color: ${(p) => p.theme.colors.black};
+  background: ${(p) => p.theme.colors.yellow};
   border-radius: 16px;
-  ::hover,
-  ::active,
-  ::focus {
-    background: ${(p) => p.theme.colors.green};
-    color: ${(p) => p.theme.colors.white};
-    border: thin solid ${(p) => p.theme.colors.white};
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    background: ${(p) => p.theme.colors.brown};
   }
 `;

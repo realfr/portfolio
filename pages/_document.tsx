@@ -29,30 +29,30 @@ export default class MyDocument extends Document {
     }
   }
   //---------------------------------------------------//
-  render() {
-    return (
-      <Html lang="en">
-        <Head>
-          <link
-            rel="preload"
-            href="/fonts/ClashDisplay.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/satoshi.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+  //   render() {
+  //     return (
+  //       <Html lang="en">
+  //         <Head>
+  //           <link
+  //             rel="preload"
+  //             href="/public/fonts/Zephyr.woff2"
+  //             as="font"
+  //             type="font/woff2"
+  //             crossOrigin="anonymous"
+  //           />
+  //           <link
+  //             rel="preload"
+  //             href="/public/fonts/Satoshi.woff2"
+  //             as="font"
+  //             type="font/woff2"
+  //             crossOrigin="anonymous"
+  //           />
+  //         </Head>
+  //         <body>
+  //           <Main />
+  //           <NextScript />
+  //         </body>
+  //       </Html>
+  //     );
+  //   }
 }

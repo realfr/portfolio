@@ -1,47 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import { AiOutlineCopy } from "react-icons/ai";
-import { NavLink } from "./typography";
-import { copy } from "../utils";
+import { flex } from "../styles/shared";
+import { B } from "./typography";
+
+const NavContainer = styled.nav`
+  ${flex({ justify: "center" })};
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  @media screen and (max-width: 568px) {
+    bottom: 0;
+  }
+  @media screen and (max-width: 768px) {
+    bottom: 0;
+  }
+  @media screen and (min-width: 769px) {
+    top: 0;
+  }
+`;
 
 export const Nav = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  ${flex({ justify: "space-between" })};
   background: ${(p) => p.theme.colors.neonGreenTransparent};
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(24px);
   border-radius: 16px;
   padding: 1rem 2rem;
-  margin: 1rem;
-  position: sticky;
-  top: 1rem;
-  z-index: 3;
+  margin: 0.5rem;
+  width: 80%;
   border: thin solid ${(p) => p.theme.colors.neonGreen};
   box-shadow: 0 10px 10px -10px rgb(0 0 0 /5%);
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default function Menu() {
   return (
-    <nav>
+    <NavContainer>
       <Nav>
         <Link href="/">
           <li>
             <Image
               src="/images/realfr.ico"
-              width={40}
-              height={40}
+              width={24}
+              height={24}
               alt="realfr logo"
             />
           </li>
         </Link>
-
-        <NavLink onClick={copy}>
-          <AiOutlineCopy />
-          Email
-        </NavLink>
+        <Link href="/notes">
+          <B link>Notes</B>
+        </Link>
       </Nav>
-    </nav>
+    </NavContainer>
   );
 }

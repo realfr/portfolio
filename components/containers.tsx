@@ -1,21 +1,16 @@
 import styled from "styled-components";
+import { flex } from "../styles/shared";
 
 const Container = styled.div`
+  ${flex};
   padding: 0 0.5rem;
-  display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
   overflow-wrap: break-word;
 `;
 const Main = styled.main`
   padding: 2.5rem 0;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  ${flex({ direction: "column" })};
   font-family: Satoshi;
   overflow-wrap: break-word;
 `;

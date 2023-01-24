@@ -15,6 +15,6 @@ export const Button = styled.button`
   &:hover,
   &:active,
   &:focus {
-    background: ${(p) => p.theme.colors.brown};
+    background: ${(p) => p.theme.colors.orange};
   }
 `;

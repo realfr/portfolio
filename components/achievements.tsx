@@ -19,7 +19,8 @@ export const Icon = styled.span`
   ${flex};
   width: 32px;
   height: 32px;
-  background: ${(p) => p.theme.colors.orange};
+  background: ${(p) => p.theme.colors.neonGreen};
+  color: ${(p) => p.theme.colors.green};
   border-radius: 50px;
   @media screen and (max-width: 768px) {
     path {

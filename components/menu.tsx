@@ -22,7 +22,7 @@ const NavContainer = styled.div`
 `;
 
 export const Nav = styled.nav`
-  ${flex({ justify: "space-between" })};
+  ${flex({ justify: "space-between", align: "center" })};
   background: ${(p) => p.theme.colors.neonGreenTransparent};
   backdrop-filter: blur(24px);
   border-radius: 16px;

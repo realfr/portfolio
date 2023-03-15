@@ -7,8 +7,8 @@ interface BProps {
 export const D1 = styled.h1`
   font-family: Zephyr;
   font-size: 4.209rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -19,8 +19,8 @@ export const D1 = styled.h1`
 export const D2 = styled.h2`
   font-family: Zephyr;
   font-size: 3.157rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -31,8 +31,8 @@ export const D2 = styled.h2`
 export const H1 = styled.h1`
   font-family: Zephyr;
   font-size: 2.369rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -43,8 +43,8 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
   font-family: Zephyr;
   font-size: 1.953rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -54,8 +54,8 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
   font-family: Zephyr;
   font-size: 1.563rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -65,8 +65,8 @@ export const H3 = styled.h3`
 export const H4 = styled.h4`
   font-family: Zephyr;
   font-size: 1.25rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   color: ${(p) => p.theme.colors.green};
   @media screen and (min-width: 768px) {
@@ -76,8 +76,8 @@ export const H4 = styled.h4`
 export const H5 = styled.h5`
   font-family: Zephyr;
   font-size: 1rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};
@@ -88,8 +88,8 @@ export const H5 = styled.h5`
 export const H6 = styled.h6`
   font-family: Zephyr;
   font-size: 1rem;
-  line-height: 120%;
-  letter-spacing: -0.03em;
+  line-height: 90%;
+  letter-spacing: -0.06em;
   overflow-wrap: break-word;
   text-transform: uppercase;
   color: ${(p) => p.theme.colors.green};
@@ -102,7 +102,7 @@ export const B = styled.span<BProps>`
   font-family: Satoshi;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 120%;
+  line-height: 90%;
   letter-spacing: -0.01em;
   transition: all 0.3s ease;
   @media screen and (min-width: 768px) {
@@ -155,7 +155,7 @@ export const L = styled.label`
   font-family: Satoshi;
   font-weight: 500;
   font-size: 0.64rem;
-  line-height: 120%;
+  line-height: 90%;
   letter-spacing: -0.01em;
   @media screen and (min-width: 768px) {
     font-size: 0.8rem;
